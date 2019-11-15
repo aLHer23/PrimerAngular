@@ -1,0 +1,16 @@
+<table>
+
+    <tr>
+        <th>ID</th>
+        <th>EMAIL</th>
+        <th>NOMBRE</th>
+        <th>COMENTARIO</th>
+    </tr>
+
+    <tr *ngFor="let comentario of comentarios">
+        <td>{{comentario.id}}</td> <!--las variables que estan aquí son sacadas del json y asignadas a la variable comentario que es un arreglo que guarda el arreglo de comentarios creado en el component-->
+        <td>{{comentario.email}}</td>
+        <td>{{comentario.name}}</td>
+        <td>{{comentario.body}}</td>
+    </tr>
+</table>
